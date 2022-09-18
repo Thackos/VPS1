@@ -52,7 +52,6 @@ def filtre_json():
 
 
 def envoie_discord(URL_VETEMENT, WEBHOOK_URL):
-    # recuperer les articles (objets)
     articles = get_products(URL_VETEMENT, NB_ARTICLES)
     # création de la liste d'articles json a partir des articles -> data.json
     articles_to_json(articles)
@@ -84,3 +83,4 @@ def envoie_discord(URL_VETEMENT, WEBHOOK_URL):
                               method='POST')
         # envoyer la request a discord
         request.urlopen(req)
+        print("Article envoyé")
