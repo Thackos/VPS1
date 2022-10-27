@@ -30,10 +30,6 @@ URL_AJ4 = "https://www.vinted.fr/vetements?search_id=6409092911&currency=EUR&sta
 URL_DUNK_LOW = "https://www.vinted.fr/vetements?search_id=6409177174&currency=EUR&status[]=3&status[]=2&status[]=1&status[]=6&order=newest_first&catalog[]=1242&price_from=1&search_text=dunk%20low&price_to=80"
 URL_TN = "https://www.vinted.fr/vetements?search_text=tn&status[]=6&status[]=1&status[]=2&status[]=3&order=newest_first&catalog[]=1242&price_from=1&currency=EUR&price_to=80"
 # Premium+ URL personnalisées
-# manteaux vestes (sur VPS2)
-URL_JEANJACQUES_1 = "https://www.vinted.fr/vetements?catalog%5B%5D=79&catalog%5B%5D=1821&catalog%5B%5D=583&catalog%5B%5D=582&catalog%5B%5D=1856&size_id%5B%5D=206&size_id%5B%5D=207&size_id%5B%5D=208&size_id%5B%5D=209&brand_id%5B%5D=53&brand_id%5B%5D=88&brand_id%5B%5D=4273&brand_id%5B%5D=430791&brand_id%5B%5D=442625&brand_id%5B%5D=4559748&brand_id%5B%5D=304&brand_id%5B%5D=677891&brand_id%5B%5D=268734&brand_id%5B%5D=6&brand_id%5B%5D=362&price_to=25&currency=EUR&order=newest_first"
-# joggos pull (sur VPS1)
-URL_JEANJACQUES_2 = "https://www.vinted.fr/vetements?catalog%5B%5D=1206&size_id%5B%5D=206&size_id%5B%5D=207&size_id%5B%5D=208&size_id%5B%5D=209&brand_id%5B%5D=53&brand_id%5B%5D=88&brand_id%5B%5D=4273&brand_id%5B%5D=430791&brand_id%5B%5D=442625&brand_id%5B%5D=4559748&brand_id%5B%5D=304&brand_id%5B%5D=677891&brand_id%5B%5D=268734&brand_id%5B%5D=362&brand_id%5B%5D=2319&brand_id%5B%5D=94&brand_id%5B%5D=364&price_to=35&currency=EUR&order=newest_first"
 
 WEBHOOK_URL_FREE_BOT = "https://discord.com/api/webhooks/1018306492945932358/fwE3Tl7Pi4JRRZggbZZmLWCE_2GmfEk8ydMAsiOn-VI56aIty5o6t4dYb9atyENxspwa"
 WEBHOOK_URL_TSHIRT_NIKE = "https://discord.com/api/webhooks/1018270137813573673/hhJ3hyeB1rgSiDttwCc5JJfuA_kjhWq78rvn82gop3vNcjqDWogrDXViccUwCjpTBFc6"
@@ -61,8 +57,6 @@ WEBHOOK_URL_AJ4 = "https://discord.com/api/webhooks/1018916748357029951/DtT4FxuM
 WEBHOOK_URL_DUNK_LOW = "https://discord.com/api/webhooks/1018916813637161000/CChuqQ01PQ4nzMj53kA4tnypscb25-6vB9_QZxZCbjWFenIALla1lML0Aki00ib_SUQ6"
 WEBHOOK_URL_TN = "https://discord.com/api/webhooks/1029845480299057202/jy1g6m1Gy6cYLdFGjvTBeg9u_Ti6hXidJ7SmUOCLpb85-N4J6lPcqqBwzp25ArKY_wdS"
 # Premium+ Salons personnalisés
-WEBHOOK_URL_JEANJACQUES_1 = "https://discord.com/api/webhooks/1021045819077578812/eVjZXmZ51uUPQKXi6NNNwtamXyR_pe7yXT9TK7moZqCfysy1BHrAsf9h48YHa-tCx2hT"
-WEBHOOK_URL_JEANJACQUES_2 = "https://discord.com/api/webhooks/1021046013257056277/_UeGxgGbSJb3vcq3Zswbiw5SuaJzEyJwABkEbroaHIGfkdrGk7n33a-ijw3Lr5wRAd74"
 
 
 while True:
@@ -103,8 +97,5 @@ while True:
         print("SWEAT STUSSY " + str(DELAI) + " secondes...")
         time.sleep(DELAI)
         envoie_discord(URL_SWEAT_STUSSY, WEBHOOK_URL_SWEAT_STUSSY)
-        print("JeanJacques2 dans " + str(DELAI) + " secondes...")
-        time.sleep(DELAI)
-        envoie_discord(URL_JEANJACQUES_2, WEBHOOK_URL_JEANJACQUES_2)
     except Exception:
         pass
